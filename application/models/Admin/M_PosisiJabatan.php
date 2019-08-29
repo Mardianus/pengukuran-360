@@ -14,7 +14,11 @@
 class M_PosisiJabatan extends CI_Model {
 
     function index() {
-        
+        $db = $this->db;
+        $query = $db->select('*')
+                    ->from('jabatan')
+                    ->get();
+        return $query->result();
     }
 
 }

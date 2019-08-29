@@ -15,6 +15,10 @@ class M_KamusKompetensi extends CI_Model {
     
     
     function index(){
-        
+        $db = $this->db;
+        $query = $db->select('*')
+            ->from('kamus_kompetensi')
+            ->get();
+        return $query->result();
     }
 }
