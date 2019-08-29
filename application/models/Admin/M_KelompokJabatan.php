@@ -14,6 +14,10 @@
 class M_KelompokJabatan extends CI_Model {
     
     function index(){
-        
+        $db = $this->db;
+        $query = $db->select('*')
+            ->from('kelompok_jabatan')
+            ->get();
+        return $query->result();
     }
 }
