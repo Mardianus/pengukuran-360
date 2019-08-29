@@ -53,15 +53,10 @@
                                     <ul class="nav side-menu">
                                         <li><a href="<?= base_url('Admin/Dashboard/index'); ?>"><i class="fa fa-dashboard"></i> DASHBOARD</a></li>
                                         <li><a href="<?= base_url('Admin/Komjab/index'); ?>"><i class=""></i> Kompetensi Jabatan</a></li>
-                                        <li><a href="<?= base_url('Admin/Pkp/index'); ?>"><i class=""></i> Pengukuran Kompetensi Peg.</a></li>
                                         <li><a href="<?= base_url('Admin/Ink/index'); ?>"><i class=""></i> Input Nilai Kompetensi</a></li>
-                                        <li><a href="<?= base_url('Admin/Pengnilai/index'); ?>"><i class=""></i> Pengukuran Penilai</a></li>
-                                        <li><a href="<?= base_url('Admin/Gapkom/index'); ?>"><i class=""></i> GAP Kompetensi</a></li>
+                                        <li><a href="<?= base_url('Admin/GAPkompetensi/index'); ?>"><i class=""></i> GAP Kompetensi</a></li>
                                         <li><a href="<?= base_url('Admin/Laporanpeng/index'); ?>"><i class=""></i> Laporan Pengukuran</a></li>
-                                        
                                         <li><a href="<?= base_url('Admin/Rekgap/index'); ?>"><i class=""></i> Rekap GAP</a></li>
-                                        
-                                        <li><a href="<?= base_url('Admin/Rekpeng/index'); ?>"><i class=""></i> Rekap Pengukuran</a></li>
                                     </ul>
                                 </div>
                                 <!--====================================================================================-->

@@ -18,6 +18,9 @@
                     bukan<br>diri<br>sendiri
                 </th>
                 <th class="text-center text-uppercase">
+                    Jawab
+                </th>
+                <th class="text-center text-uppercase">
                     action
                 </th>
             </tr>
@@ -50,6 +53,9 @@
                 <td class="text-center">
                     <textarea class="form-control" name="bds" required="" style="width:100%;"></textarea>
                 </td>
+                <td>
+                    
+                </td>
                 <td class="text-center">
                     <button type="submit" class="btn btn-default btn-xs btn-success"><i class="glyphicon glyphicon-save"></i></button>
                 </td>
@@ -73,6 +79,11 @@
                     </td>
                     <td>
                         <?= substr($value->soal_bds, 0, 25) ?> ...
+                    </td>
+                    <td>
+                        <div class="btn-group">
+                            
+                        </div>
                     </td>
                     <td class="text-center">
                         <div class="btn-group">
