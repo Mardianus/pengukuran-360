@@ -1,4 +1,5 @@
 <div class="table-responsive">
+    <button class="btn btn-success"> <i class="fa fa-plus"></i> Tambah Data</button>
     <table class="table table-bordered table-hover table-striped">
         <thead>
             <tr>
@@ -23,49 +24,36 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td class="text-center text-uppercase">
-                    <input type="text" name="kode_jabatan" class="form-control" autocomplete="off" required="" style="width:100%;">
-                </td>
-                <td class="text-center text-uppercase">
+            <?php foreach($value as $item) {?>
+                <tr>
 
-                </td>
-                <td class="text-center text-uppercase">
+                    <td class="text-center text-uppercase">
+                        <?= $item->kode_jabatan ?>
+                    </td>
+                    <td class="text-center text-uppercase">
+                        <?= $item->nama_jabatan ?>
+                    </td>
+                    <td class="text-center text-uppercase">
+                        <?= $item->divisi ?>
+                    </td>
+                    <td class="text-center text-uppercase">
+                        <?= $item->unit_kerja ?>
+                    </td>
+                    <td class="text-center text-uppercase">
+                        <?= $item->kode_matrik ?>
+                    </td>
+                    <td class="text-center">
+                        <div class="btn-group">
+                            <a href="<?= base_url(''); ?>" class="btn btn-xs btn-default"><i class="glyphicon glyphicon-pencil"></i></a>
+                            <a href="<?= base_url(''); ?>" class="btn btn-xs btn-danger"><i class="glyphicon glyphicon-trash"></i></a>
+                        </div>
+                    </td>
+                </tr>
 
-                </td>
-                <td class="text-center text-uppercase">
+            <?php }?>
 
-                </td>
-                <td class="text-center text-uppercase">
 
-                </td>
-                <td class="text-center text-uppercase">
 
-                </td>
-            </tr>
-            <tr>
-                <td>
-
-                </td>
-                <td>
-
-                </td>
-                <td>
-
-                </td>
-                <td>
-
-                </td>
-                <td>
-
-                </td>
-                <td class="text-center">
-                    <div class="btn-group">
-                        <a href="<?= base_url(''); ?>" class="btn btn-xs btn-default"><i class="glyphicon glyphicon-pencil"></i></a>
-                        <a href="<?= base_url(''); ?>" class="btn btn-xs btn-danger"><i class="glyphicon glyphicon-trash"></i></a>
-                    </div>
-                </td>
-            </tr>
         </tbody>
     </table>
 </div>
