@@ -22,7 +22,7 @@
     <?php foreach ($value as $value) { ?>
         <tr>
 
-            <td>
+            <td class="text-center">
                 <?= $value->kelompok ?>
             </td>
             <td class="text-center">
