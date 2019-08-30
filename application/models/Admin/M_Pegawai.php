@@ -22,7 +22,6 @@ class M_Pegawai extends CI_Model {
                 ->join('level_jabatan', 'matrik_jabatan.id_level = level_jabatan.id', 'LEFT')
                 ->join('kelompok_jabatan', 'matrik_jabatan.id_kelompok = kelompok_jabatan.id', 'LEFT')
                 ->where('pegawai.status_active', 1)
-                ->LIMIT(4000)
                 ->get()
                 ->result();
         return $exec;
