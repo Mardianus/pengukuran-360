@@ -14,6 +14,11 @@
 class M_Komjab extends CI_Model{
     
     function index(){
-        
+        return $this->db->select('*')
+                        ->from('jabatan a')
+                        ->join('matrik_jabatan b', 'a.kode_matrik = b.kode_matrik')
+                        ->join('level_jabatan c', 'b.id_level = c.id')
+                        ->get()
+                        ->result();
     }
 }
