@@ -14,6 +14,11 @@
 class M_KelompokTingkatJabatan extends CI_Model {
     
       function index(){
-        
+        $db = $this->db;
+        $query = $db->select('*')
+            ->from('kelompok_jabatan')
+             ->join('kelompok_jabatan','level_jabatan','')
+            ->get();
+        return $query->result();
     }
 }

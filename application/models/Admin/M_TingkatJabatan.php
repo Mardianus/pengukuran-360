@@ -14,6 +14,10 @@
 class M_TingkatJabatan extends CI_Model {
     
     function index() {
-        
+        $db = $this->db;
+        $query = $db->select('*')
+            ->from('level_jabatan')
+            ->get();
+        return $query->result();
     }
 }

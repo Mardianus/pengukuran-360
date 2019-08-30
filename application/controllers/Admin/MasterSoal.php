@@ -44,4 +44,19 @@ class MasterSoal extends CI_Controller {
         }
     }
 
+    function Jawaban($id_soal) {
+        $exec = $this->M_MasterSoal->Jawaban($id_soal);
+        if ($exec != false) {
+            $response = ['set_status_header' => 200, $exec];
+        } else {
+            $response = ['set_status_header' => 200, 'code' => 'Error', 'msg' => 'Error, While load data'];
+        }
+        $this->output
+                ->set_status_header($response['set_status_header'], true)
+                ->set_content_type('application/json', 'utf-8')
+                ->set_output(json_encode($response, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES))
+                ->_display();
+        exit;
+    }
+
 }

@@ -8,6 +8,7 @@
         <spellchecker-wordlist xmlns="http://www.netbeans.org/ns/spellchecker-wordlist/1">
             <word>Efendy</word>
             <word>Jabatan</word>
+            <word>Jawaban</word>
             <word>Kebutuhan</word>
             <word>kerja</word>
             <word>kode</word>
@@ -16,6 +17,7 @@
             <word>nama</word>
             <word>sendiri</word>
             <word>Tambah</word>
+            <word>tbody</word>
         </spellchecker-wordlist>
     </configuration>
 </project>

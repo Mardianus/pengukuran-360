@@ -15,6 +15,10 @@ class M_ManagementUser extends CI_Model{
     
    
     function index (){
-        
+        $db = $this->db;
+        $query = $db->select('*')
+            ->from('tab_user')
+            ->get();
+        return $query->result();
     }
 }

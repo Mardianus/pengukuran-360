@@ -7,9 +7,7 @@
                 <th class="text-center text-uppercase">
                     Nama
                 </th>
-                <th class="text-center text-uppercase">
-                    Pegawai
-                </th>
+               
                 <th class="text-center text-uppercase">
                     Terakhir<br>Login
                 </th>
@@ -18,6 +16,26 @@
                 </th>
             </tr>
         </thead>
+        <tbody>
+            
+             <?php $i = 1;foreach ($value as $value) { ?>
+        <tr>
+            <td class="text-center">
+                <?= $i ?>
+            </td>        
+            <td class="text-center">
+                <?= $value->id_emp ?>
+            </td>
+           
+            <td class="text-center">
+                <?= $value->last_login ?>
+            </td>
+            <td class="text-center">
+                <?php  ($this->session->userdata('id') == $value->id ? print "<i class='text-success glyphicon glyphicon-ok-circle' title='online'></i>" :  "<i class='text-danger glyphicon glyphicon-ok-circle' title='online'></i>");  ?>
+            </td>
+        </tr>
+    <?php $i++;} ?>
+        </tbody>
 </table>
 <script>
     document.onreadystatechange = () => {
