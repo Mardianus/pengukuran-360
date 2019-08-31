@@ -62,6 +62,9 @@
                                 <div class="menu_section <?= $pegawai; ?>">
                                     <ul class="nav side-menu">
                                         <li><a href="<?= base_url('Admin/Dashboard/index'); ?>"><i class="fa fa-dashboard"></i> DASHBOARD</a></li>
+                                        <li><a href="<?= base_url('Admin/pkp'); ?>"><i class=""></i> Pengukuran Kompetensi</a></li>
+                                        <li><a href="<?= base_url('Admin/GAPkompetensi/index'); ?>"><i class=""></i> GAP Kompetensi</a></li>
+
                                     </ul>
                                 </div>
                                 <!--====================================================================================-->
@@ -96,28 +99,28 @@
                     </div>
                 </div>
                 <div class="right_col hidden" role="main" style="min-height:0px ! important;">
-                    <a href="<?= base_url('Admin/Pegawai/index/'); ?>" class="btn btn-app">
+                    <a href="<?= base_url('Admin/Pegawai/index/'); ?>" class="btn btn-app <?= $admin ?> ">
                         <i class="fa fa-user"></i> Data Pegawai
                     </a>
-                    <a href="<?= base_url('Admin/PosisiJabatan/index/'); ?>" class="btn btn-app">
+                    <a href="<?= base_url('Admin/PosisiJabatan/index/'); ?>" class="btn btn-app <?= $admin ?>">
                         <i class="fa fa-user"></i> Posisi Jabatan
                     </a>
-                    <a href="<?= base_url('Admin/KelompokJabatan/index/'); ?>" class="btn btn-app">
+                    <a href="<?= base_url('Admin/KelompokJabatan/index/'); ?>" class="btn btn-app <?= $admin ?>">
                         <i class="fa fa-users"></i> Kelompok Jabatan
                     </a>
-                    <a href="<?= base_url('Admin/TingkatJabatan/index/'); ?>" class="btn btn-app">
+                    <a href="<?= base_url('Admin/TingkatJabatan/index/'); ?>" class="btn btn-app <?= $admin ?>">
                         <i class="fa fa-linode"></i> Tingkat Jabatan
                     </a>
-                    <a href="<?= base_url('Admin/KelompokTingkatJabatan/index/'); ?>" class="btn btn-app">
+                    <a href="<?= base_url('Admin/KelompokTingkatJabatan/index/'); ?>" class="btn btn-app <?= $admin ?>">
                         <i class="fa fa-linode"></i> Kelompok Tingkat Jabatan
                     </a>
-                    <a href="<?= base_url('Admin/KamusKompetensi/index/'); ?>" class="btn btn-app">
+                    <a href="<?= base_url('Admin/KamusKompetensi/index/'); ?>" class="btn btn-app <?= $admin ?>">
                         <i class="fa fa-book"></i> Kamus Kompetensi
                     </a>
-                    <a href="<?= base_url('Admin/ManagementUser/index/'); ?>" class="btn btn-app">
+                    <a href="<?= base_url('Admin/ManagementUser/index/'); ?>" class="btn btn-app <?= $admin ?>">
                         <i class="fa fa-users"></i> Management User
                     </a>
-                    <a href="<?= base_url('Admin/MasterSoal/index/'); ?>" class="btn btn-app">
+                    <a href="<?= base_url('Admin/MasterSoal/index/'); ?>" class="btn btn-app <?= $admin ?>">
                         <i class="fa fa-cubes"></i> Master Soal
                     </a>
                     <div class="x_panel">

@@ -16,7 +16,6 @@ class GAPkompetensi extends CI_Controller {
     public function __construct() {
         parent::__construct();
         $this->load->model(['M_Auth' => 'M_Auth', 'Admin/M_GAPkompetensi' => 'M_GAPkompetensi']);
-        $this->result = $this->M_Auth->index();
     }
     function index() {
         $data = [

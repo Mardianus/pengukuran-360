@@ -3,10 +3,10 @@
         <div class="form-group">
             <label class="text-uppercase col-sm-4">Nama Pegawai <small class="text-danger">*</small></label>
             <div class="col-sm-8">
-                <select onChange="getDetail()" class="form-control text-uppercase" id="pegawai" name="pegawai" required="">
+                <select class="form-control text-uppercase" name="pegawai" required="">
                     <option value="" class="text-uppercase">pilih Nama Pegawai</option>
                     <?php foreach ($value as $pegawai) { ?>
-                        <option id="option" data="<?= $pegawai->nama_jabatan ?>" value="<?= $pegawai->nik ?>"><?= $pegawai->nama ?></option>
+                        <option data-ID="<?= $pegawai->nik ?>" value="<?= $pegawai->nik ?>"><?= $pegawai->nama ?></option>
                     <?php } ?>
                 </select>
             </div>
@@ -26,19 +26,18 @@
         </div>
     </div>
     <div class="col-md-4">
-
+    <div class="table">
+        <table>
+            <thead>
+                <th>Nama Kompetensi</th>
+                <th>Standar</th>
+            <th>HAsil</th>
+            </thead>
+        </table>
+    </div>
     </div>
     <div class="col-md-4">
 
-    </div>
-    <div class="table">
-        <table class="table table-bordered table-hover table-striped">
-            <thead>
-            <th>Kompetensi</th>
-            <th>Standar</th>
-            <th>Hasil</th>
-            </thead>
-        </table>
     </div>
 </div>
 <div class="form-group">
@@ -49,15 +48,8 @@
         if (document.readyState === 'complete') {
             $(".right_col").removeClass("hidden");
         }
-        getDetail = () => {
-            var data = pegawai.options[pegawai.selectedIndex].value;
-            var jabatan = pegawai.options[pegawai.selectedIndex].getAttribute('data');
-            document.getElementById('nikpeg').innerHTML = data;
-            document.getElementById('jabatan').innerHTML = jabatan.toUpperCase()    ;
-        }
     };
     window.onload = function () {
         $('table').dataTable({});
     };
-
 </script>
