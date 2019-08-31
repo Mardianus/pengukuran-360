@@ -99,28 +99,28 @@
                     </div>
                 </div>
                 <div class="right_col hidden" role="main" style="min-height:0px ! important;">
-                    <a href="<?= base_url('Admin/Pegawai/index/'); ?>" class="btn btn-app <?= $admin ?> ">
+                    <a href="<?= base_url('Admin/Pegawai/index/'); ?>" class="btn btn-app <?= $admin == "show" ? '' : $admin ?> ">
                         <i class="fa fa-user"></i> Data Pegawai
                     </a>
-                    <a href="<?= base_url('Admin/PosisiJabatan/index/'); ?>" class="btn btn-app <?= $admin ?>">
+                    <a href="<?= base_url('Admin/PosisiJabatan/index/'); ?>" class="btn btn-app <?= $admin == "show" ? '' : $admin ?>">
                         <i class="fa fa-user"></i> Posisi Jabatan
                     </a>
-                    <a href="<?= base_url('Admin/KelompokJabatan/index/'); ?>" class="btn btn-app <?= $admin ?>">
+                    <a href="<?= base_url('Admin/KelompokJabatan/index/'); ?>" class="btn btn-app <?= $admin == "show" ? '' : $admin ?>">
                         <i class="fa fa-users"></i> Kelompok Jabatan
                     </a>
-                    <a href="<?= base_url('Admin/TingkatJabatan/index/'); ?>" class="btn btn-app <?= $admin ?>">
+                    <a href="<?= base_url('Admin/TingkatJabatan/index/'); ?>" class="btn btn-app <?= $admin == "show" ? '' : $admin ?>">
                         <i class="fa fa-linode"></i> Tingkat Jabatan
                     </a>
-                    <a href="<?= base_url('Admin/KelompokTingkatJabatan/index/'); ?>" class="btn btn-app <?= $admin ?>">
+                    <a href="<?= base_url('Admin/KelompokTingkatJabatan/index/'); ?>" class="btn btn-app <?= $admin == "show" ? '' : $admin ?>">
                         <i class="fa fa-linode"></i> Kelompok Tingkat Jabatan
                     </a>
-                    <a href="<?= base_url('Admin/KamusKompetensi/index/'); ?>" class="btn btn-app <?= $admin ?>">
+                    <a href="<?= base_url('Admin/KamusKompetensi/index/'); ?>" class="btn btn-app <?= $admin == "show" ? '' : $admin ?>">
                         <i class="fa fa-book"></i> Kamus Kompetensi
                     </a>
-                    <a href="<?= base_url('Admin/ManagementUser/index/'); ?>" class="btn btn-app <?= $admin ?>">
+                    <a href="<?= base_url('Admin/ManagementUser/index/'); ?>" class="btn btn-app <?= $admin == "show" ? '' : $admin ?>">
                         <i class="fa fa-users"></i> Management User
                     </a>
-                    <a href="<?= base_url('Admin/MasterSoal/index/'); ?>" class="btn btn-app <?= $admin ?>">
+                    <a href="<?= base_url('Admin/MasterSoal/index/'); ?>" class="btn btn-app <?= $admin == "show" ? '' : $admin ?>">
                         <i class="fa fa-cubes"></i> Master Soal
                     </a>
                     <div class="x_panel">

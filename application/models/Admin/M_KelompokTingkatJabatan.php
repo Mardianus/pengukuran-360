@@ -17,7 +17,7 @@ class M_KelompokTingkatJabatan extends CI_Model {
         $db = $this->db;
         $query = $db->select('*')
             ->from('kelompok_jabatan')
-             ->join('kelompok_jabatan','level_jabatan','')
+             ->join('level_jabatan','kelompok_jabatan.id = level_jabatan.id','left')
             ->get();
         return $query->result();
     }

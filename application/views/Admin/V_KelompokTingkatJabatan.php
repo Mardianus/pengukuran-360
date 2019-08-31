@@ -29,6 +29,9 @@
                 <?= $value->kelompok ?>
             </td>
             <td class="text-center">
+                <?= $value->level ?>
+            </td>
+            <td class="text-center">
                 <div class="btn-group">
                     <a href="<?= base_url('Admin/Pegawai/Detail/' . $value->id . ''); ?>" class="btn btn-default btn-xs" data-toggle="tooltip" data-placement="bottom" title="Detail data karyawan"><i class="glyphicon glyphicon-eye-open"></i></a>
                     <a href="<?= base_url(); ?>" class="btn btn-default btn-xs" data-toggle="tooltip" data-placement="bottom" title="Edit data karyawan"><i class="glyphicon glyphicon-pencil"></i></a>

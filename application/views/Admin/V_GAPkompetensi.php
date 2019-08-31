@@ -34,11 +34,39 @@
     <div class="table">
         <table class="table table-bordered table-hover table-striped">
             <thead>
+            <th>No</th>
             <th>Kompetensi</th>
             <th>Standar</th>
             <th>Hasil</th>
             </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>Kerja Sama</td>
+                <td>5</td>
+                <td>3.5</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Dorongan</td>
+                <td>5</td>
+                <td>3.5</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Orientasi</td>
+                <td>5</td>
+                <td>3.5</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Pemecahan Masalah</td>
+                <td>5</td>
+                <td>3.5</td>
+            </tr>
+            </tbody>
         </table>
+
     </div>
 </div>
 <div class="form-group">
